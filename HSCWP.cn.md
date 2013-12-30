@@ -38,7 +38,7 @@ ISBN 978-1482614374
 
 ---
 
-<div style="float: center"><img src="Images/NedroidPictureDiary.jpg" /></div>
+<p align="center"><img src="Images/NedroidPictureDiary.jpg"/></p>
 
 <div align="right">
 Nedroid Picture Diary by Anthony Clark, http://nedroid.com
