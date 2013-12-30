@@ -1,4 +1,4 @@
-Hacking-Secret-Ciphers-with-Python-cn
+Hacking Secret Ciphers with Python 中文版
 =====================================
 
-Chinese version of the book "Hacking Secret Ciphers with Python
+进化中……
