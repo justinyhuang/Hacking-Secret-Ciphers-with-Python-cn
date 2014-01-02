@@ -116,7 +116,7 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
 “为什么我不经意却总是能听见别人说话呢？也许是因为我过去常干窃听这种事吧……”
 </div>
 <div align="right">
-佚名【译者：在[http://quotegeek.com/television/ally-mcbeal/2925/](这里)，原话出自Ally McBeal】
+佚名【译者：在<a href="http://quotegeek.com/television/ally-mcbeal/2925/">这里</a>，原话出自Ally McBeal】
 </div>  
 
 ---
@@ -692,8 +692,7 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
 在学习怎样用计算机编码和解码之前，我们先用纸来做一个简单的工具。有了这个工具就可以简单的把英文（称为**明文**（**plaintext**））转换为隐藏了秘密的“垃圾字符”（称为**密文**（**ciphertext**））。**密码**（**cipher**）描述了一系列的规则用来在明文和密文之间转换。这些规则通常都会用到密钥（secret key）。本书将介绍几种不同的密码。  
 首先要介绍的是Caesar密码。Julius
 Caesar在两千年前就在使用这种密码了。它的好处是简单易学。同时因为简单，它的缺点就是容易被破解。不过我们在学习的时候可以用来作为练习。在Wikipedia上有关于Caesar密码更详尽的信息：http://en.wikipedia.org/wiki/Caesar_cipher 。  
-为了用Caesar密码将明文转为密文，我们需要制作一个密码轮（也有人称它为密码盘）。在这里你可以将书中的密码轮复印下来，或者到http://invpy.com/cipherwheel
-上去把它打印出来。把那两个圆剪出来并像图1-8那样重叠在一起。  
+为了用Caesar密码将明文转为密文，我们需要制作一个密码轮（也有人称它为密码盘）。在这里你可以将书中的密码轮复印下来，或者到<a>http://invpy.com/cipherwheel</a>上去把它打印出来。把那两个圆剪出来并像图1-8那样重叠在一起。  
 
 ---
 
@@ -712,7 +711,7 @@ Caesar在两千年前就在使用这种密码了。它的好处是简单易学�
 <div align="center">
 <p>图1-5 密码轮的外环</p>
 <p>不要直接在书上剪！</p>
-<p>复印或者从http://invpy.com/cipherwheel上打印出来。</p>
+<p>复印或者从<a>http://invpy.com/cipherwheel</a>上打印出来。</p>
 </div>
 
 ---
@@ -752,7 +751,7 @@ Caesar在两千年前就在使用这种密码了。它的好处是简单易学�
  style='border-collapse:collapse'>
  <tr>
   <td width=307 valign=top style='width:3.2in;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>如果你没有剪刀或者复印机制作纸质的密码轮，可以到http://invpy.com/cipherwheel下载软件版本的工具。【译者：呃……早知道有软件可以用我就不做前面的手工了】</p>
+  <p class=MsoNormal>如果你没有剪刀或者复印机制作纸质的密码轮，可以到<a>http://invpy.com/cipherwheel</a>下载软件版本的工具。【译者：呃……早知道有软件可以用我就不做前面的手工了】</p>
   <p class=MsoNormal>用鼠标点转轮，然后移动鼠标让转轮旋转直至转到想要的那个密钥到位。最后再点鼠标一次转轮就会停止转动了。</p>
   </td>
   <td width=283 valign=top style='width:2.95in;padding:0in 5.4pt 0in 5.4pt'>
@@ -1377,7 +1376,7 @@ normal'>&nbsp;</p>
   </td>
   <td width=409 valign=top style='width:306.9pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal>有另外一种纸质的工具可以用来加密解密，叫做St. Cyr slide。它和密码轮很像，只不过它是笔直的一条。</p>
-  <p class=MsoNormal>复印书中的St. Cyr slide（或者是从http://invpy.com/stcyrslide上打印）然后剪出这三张纸条。【译者：两张小的一张大的】</p>
+  <p class=MsoNormal>复印书中的St. Cyr slide（或者是从<a>http://invpy.com/stcyrslide</a>上打印）然后剪出这三张纸条。【译者：两张小的一张大的】</p>
   <p class=MsoNormal>首先把两个小纸条接连粘起来，把黑色背景的字母A粘在另外一张字母条的Z的旁边。把大纸条两侧的切口剪出来，然后把粘在一起的长条穿过这两个切口，就像这样：</p>
   <p class=MsoNormal align=center style='text-align:center'><img width=317
   height=87 id="Picture 79" src="Images/c1f1-12.jpg"></p>
@@ -1385,7 +1384,7 @@ normal'>&nbsp;</p>
   <p class=MsoNormal>现在黑色背景的A在字母H（以及数字7）的下面，编码就是在长条上找到明文中的字母，然后用它上方的大纸条上的字母替换掉明文中的字母。解码的话，就是在大纸条上找到密文的字母，并用下面长条中相应的字母做替换。【译者：其实和密码轮一样的道理】</p>
   <p class=MsoNormal>大纸条上的两个切口起的是隐藏的作用，这样就可以专注于那些与大纸条上字母相对应的小纸条上的字母了。</p>
   <p class=MsoNormal>St. Cyr slide的好处是能够更容易找到想要查找的字母，因为它们都在一行上，不像密码轮那样有些字母是底朝天。</p>
-  <p class=MsoNormal><u>http://invpy.com/stcyrslide</u><span class=URL></span>提供了一个虚拟的St. Cyr slide软件，同时也可以用这个软件打印这些纸条。</p>
+  <p class=MsoNormal><a>http://invpy.com/stcyrslide</a>提供了一个虚拟的St. Cyr slide软件，同时也可以用这个软件打印这些纸条。</p>
   </td>
  </tr>
 </table>
@@ -2089,7 +2088,7 @@ paper and pencil.</p>
  </tr>
 </table>   
 </div>
-解码的时候，就要用到负数的知识了。如果你不知道如何对负数做加减，http://invpy.com/neg有一段教学。    
+解码的时候，就要用到负数的知识了。如果你不知道如何对负数做加减，<a>http://invpy.com/neg</a>有一段教学。    
 解码的方法和编码类似，只是用减法而不是加法。比如说密文中的B，数字是1。1-13得到-12。和前面编码时“减26”的规则类似，当解码的时候运算结果小于0，我们就需要一个“加26”规则。-12+26是14。这样密文中的B就被解码成字母O了。  
 <p class=TableCaption>Table 1-2. The steps to decrypt the ciphertext with paper
 and pencil.</p>
