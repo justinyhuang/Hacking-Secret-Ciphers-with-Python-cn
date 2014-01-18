@@ -1082,9 +1082,8 @@ height=227 id="Picture 23" src="Images/c1f1-10.jpg"></p>
 ###用密码轮解码  
 解码密文的时候就从内环往外环走。比如说你从朋友那里收到一段密文：“Iwt ctl ephhldgs xh Hldgsuxhw.”。没有人能够对它解码，除非知道密码（当然聪明的黑客也能做到）。好在你的朋友用的密钥是15并且也把这个密钥告诉了你。  
 
-现在我们把外环上的字母A（下面有一个点）与内环上有数字15的那个字母对齐(字母P)。密文中第一个字母是I，我们在内环中找到字母I然后找到相对应的外环上的字母，T。密文中的字母W解码得到字母H。将字母一个一个解码出来后，密文就被转成明文“The new password is Swordfish.”   
+现在我们把外环上的字母A（下面有一个点）与内环上有数字15的那个字母对齐(字母P)。密文中第一个字母是I，我们在内环中找到字母I然后找到相对应的外环上的字母，T。密文中的字母W解码得到字母H。将字母一个一个解码出来后，密文就被转成明文“The new password is Swordfish.”     
 <div align=center>
-
 <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
  style='border-collapse:collapse'>
  <tr>
@@ -1238,14 +1237,11 @@ height=227 id="Picture 23" src="Images/c1f1-10.jpg"></p>
   </td>
  </tr>
 </table>
-</div>
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p>
+</div>   
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height: normal'>&nbsp;</p>  
 
 <div align=center>
-
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
- style='border-collapse:collapse'>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
  <tr>
   <td width=25 valign=top style='width:18.75pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing>X</p>
@@ -1370,31 +1366,30 @@ normal'>&nbsp;</p>
   </td>
  </tr>
 </table>
+</div>   
 
-</div>
+如果我们用的密钥是错的，比如16而不是正确的15，那么解码得出的消息就是“Sgd mdv ozrrvnqc hr Rvnqcehrg.” 这个明文一点也不读不明白。所以除非用正确的密钥，解码得出的文字永远不会是有意义的英文。    
 
-如果我们用的密钥是错的，比如16而不是正确的15，那么解码得出的消息就是“Sgd mdv ozrrvnqc hr Rvnqcehrg.” 这个明文一点也不读不明白。所以除非用正确的密钥，解码得出的文字永远不会是有意义的英文。  
+###另一种的密码工具：St. Cyr Slide    
 
-###另一种的密码工具：St. Cyr Slide  
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
- style='border-collapse:collapse'>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
  <tr>
   <td width=181 valign=top style='width:135.9pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal><img width=160 height=628 id="Picture 54"
-  src="Images/c1f1-11.jpg"></p>
-  <p class=FigureCaption>图 1-11. 复印这些字条用来制作St. Cyr Slide.</p>
+    <p class=MsoNormal>
+      <img width=160 height=628 id="Picture 54" src="Images/c1f1-11.jpg">
+    </p>
+    <p class=FigureCaption>图 1-11. 复印这些字条用来制作St. Cyr Slide.</p>
   </td>
   <td width=409 valign=top style='width:306.9pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>有另外一种纸质的工具可以用来加密解密，叫做St. Cyr slide。它和密码轮很像，只不过它是笔直的一条。</p>
-  <p class=MsoNormal>复印书中的St. Cyr slide（或者是从<a>http://invpy.com/stcyrslide</a>上打印）然后剪出这三张纸条。【译者：两张小的一张大的】</p>
-  <p class=MsoNormal>首先把两个小纸条接连粘起来，把黑色背景的字母A粘在另外一张字母条的Z的旁边。把大纸条两侧的切口剪出来，然后把粘在一起的长条穿过这两个切口，就像这样：</p>
-  <p class=MsoNormal align=center style='text-align:center'><img width=317
-  height=87 id="Picture 79" src="Images/c1f1-12.jpg"></p>
-  <p class=FigureCaption>图 1-12. St. Cyr Slide完成图</p>
-  <p class=MsoNormal>现在黑色背景的A在字母H（以及数字7）的下面，编码就是在长条上找到明文中的字母，然后用它上方的大纸条上的字母替换掉明文中的字母。解码的话，就是在大纸条上找到密文的字母，并用下面长条中相应的字母做替换。【译者：其实和密码轮一样的道理】</p>
-  <p class=MsoNormal>大纸条上的两个切口起的是隐藏的作用，这样就可以专注于那些与大纸条上字母相对应的小纸条上的字母了。</p>
-  <p class=MsoNormal>St. Cyr slide的好处是能够更容易找到想要查找的字母，因为它们都在一行上，不像密码轮那样有些字母是底朝天。</p>
-  <p class=MsoNormal><a>http://invpy.com/stcyrslide</a>提供了一个虚拟的St. Cyr slide软件，同时也可以用这个软件打印这些纸条。</p>
+    <p class=MsoNormal>有另外一种纸质的工具可以用来加密解密，叫做St. Cyr slide。它和密码轮很像，只不过它是笔直的一条。</p>
+    <p class=MsoNormal>复印书中的St. Cyr slide（或者是从<a>http://invpy.com/stcyrslide</a>上打印）然后剪出这三张纸条。【译者：两张小的一张大的】</p>
+    <p class=MsoNormal>首先把两个小纸条接连粘起来，把黑色背景的字母A粘在另外一张字母条的Z的旁边。把大纸条两侧的切口剪出来，然后把粘在一起的长条穿过这两个切口，就像这样：</p>
+    <p class=MsoNormal align=center style='text-align:center'><img width=317 height=87 id="Picture 79" src="Images/c1f1-12.jpg"></p>
+    <p class=FigureCaption>图 1-12. St. Cyr Slide完成图</p>
+    <p class=MsoNormal>现在黑色背景的A在字母H（以及数字7）的下面，编码就是在长条上找到明文中的字母，然后用它上方的大纸条上的字母替换掉明文中的字母。解码的话，就是在大纸条上找到密文的字母，并用下面长条中相应的字母做替换。【译者：其实和密码轮一样的道理】</p>
+    <p class=MsoNormal>大纸条上的两个切口起的是隐藏的作用，这样就可以专注于那些与大纸条上字母相对应的小纸条上的字母了。</p>
+    <p class=MsoNormal>St. Cyr slide的好处是能够更容易找到想要查找的字母，因为它们都在一行上，不像密码轮那样有些字母是底朝天。</p>
+    <p class=MsoNormal><a>http://invpy.com/stcyrslide</a>提供了一个虚拟的St. Cyr slide软件，同时也可以用这个软件打印这些纸条。</p>
   </td>
  </tr>
 </table>    
