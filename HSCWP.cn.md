@@ -2589,9 +2589,10 @@ and pencil.</p>
   </td>
  </tr>
 </table>
-</div>
+</div>    
 
 可见，没有密码轮也可以使用Caesar密码。如果记住了字母和数字之间的关系，就连那个字母-数字表也不需要写出来了。可以直接用心算然后直接写出密文。   
+
 ###第一章 练习二
 请访问 http://invpy.com/hackingpractice1B 。  
 
@@ -2607,13 +2608,12 @@ and pencil.</p>
 ###用计算机做编码
 人们使用Caesar以及相似的密码来加密信息已经有几个世纪的历史。下图是由Albert Myer发明的密码盘，在1863年美国内战的时候就有人使用了。
 
-<p class=MsoNormal align=center style='text-align:center'><img width=241
-height=275 id="Picture 58" src="Images/c1f1-13.jpg"></p>
+<p class=MsoNormal align=center style='text-align:center'><img width=241 height=275 id="Picture 58" src="Images/c1f1-13.jpg"></p>   
 
-<p class=FigureCaption align=center>图 1-13. 美国国家密码逻辑博物馆收藏的内战时期北方联盟使用的密码盘</p>
+<p class=FigureCaption align=center>图 1-13. 美国国家密码逻辑博物馆收藏的内战时期北方联盟使用的密码盘</p>   
 
 如果要加密非常长的消息（比如说一整本书），全部手工来做的话大概需要几天甚至几个周的时间。这个时候编写计算机程序就能帮上大忙了。计算机可以做一秒之内加密大量的文本！只是我们需要直到如何指示（也就是编程）计算机去按照我们之前同样的步骤来加密。   
-首先我们必须使用计算机能理解的语言与其沟通。幸运的是学习一门编程语言并没有学习一门像日语或是西班牙语这样的外语难。数学方面的知识要求也不高，甚至不需要知道加减乘除以外的知识。你需要做的仅仅是下载一个叫做Python的软件。下一章我们就来介绍这个。  
+首先我们必须使用计算机能理解的语言与其沟通。幸运的是学习一门编程语言并没有学习一门像日语或是西班牙语这样的外语难。数学方面的知识要求也不高，甚至不需要知道加减乘除以外的知识。你需要做的仅仅是下载一个叫做Python的软件。下一章我们就来介绍这个。    
 
 第二章 安装Python
 --
