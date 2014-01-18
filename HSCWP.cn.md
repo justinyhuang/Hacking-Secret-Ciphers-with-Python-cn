@@ -695,15 +695,10 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
 ###做个纸密码轮  
 在学习怎样用计算机编码和解码之前，我们先用纸来做一个简单的工具。有了这个工具就可以简单的把英文（称为**明文**（**plaintext**））转换为隐藏了秘密的“垃圾字符”（称为**密文**（**ciphertext**））。**密码**（**cipher**）描述了一系列的规则用来在明文和密文之间转换。这些规则通常都会用到密钥（secret key）。本书将介绍几种不同的密码。  
 
-首先要介绍的是Caesar密码。Julius
-Caesar在两千年前就在使用这种密码了。它的好处是简单易学。同时因为简单，它的缺点就是容易被破解。不过我们在学习的时候可以用来作为练习。在Wikipedia上有关于Caesar密码更详尽的信息：http://en.wikipedia.org/wiki/Caesar_cipher 。  
-<<<<<<< HEAD
-为了用Caesar密码将明文转为密文，我们需要制作一个密码轮（也有人称它为密码盘）。在这里你可以将书中的密码轮复印下来，或者到<a>http://invpy.com/cipherwheel</a>上去把它打印出来。把那两个圆剪出来并像图1-8那样重叠在一起。  
-=======
+首先要介绍的是Caesar密码。Julius Caesar在两千年前就在使用这种密码了。它的好处是简单易学。同时因为简单，它的缺点就是容易被破解。不过我们在学习的时候可以用来作为练习。在Wikipedia上有关于Caesar密码更详尽的信息：http://en.wikipedia.org/wiki/Caesar_cipher 。  
 
 为了用Caesar密码将明文转为密文，我们需要制作一个密码轮（也有人称它为密码盘）。在这里你可以将书中的密码轮复印下来，或者到http://invpy.com/cipherwheel
 上去把它打印出来。把那两个圆剪出来并像图1-8那样重叠在一起。  
->>>>>>> complete chapter 2
 
 ---
 
