@@ -165,12 +165,10 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
  style='border-collapse:collapse'>
  <tr>
   <td width=295 valign=top style='width:221.4pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal align=center style='text-align:center'><img width=110
-  height=159 id="Picture 50" src="Images/c1f1-1.jpg"></p>
+  <p class=MsoNormal align=center style='text-align:center'><img width=110 height=159 id="Picture 50" src="Images/c1f1-1.jpg"></p>
   </td>
   <td width=295 valign=top style='width:221.4pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal align=center style='text-align:center'><img width=148
-  height=159 id="Picture 52" src="Images/c1f1-2.jpg"></p>
+  <p class=MsoNormal align=center style='text-align:center'><img width=148 height=159 id="Picture 52" src="Images/c1f1-2.jpg"></p>
   </td>
  </tr>
  <tr>
@@ -727,20 +725,17 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
  <tr>
   <td width=217 valign=bottom style='width:162.85pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center;page-break-after:
-  avoid'><img width=151 height=252 id="Picture 3"
-  src="Images/c1f1-6.jpg"></p>
+  avoid'><img width=151 height=252 id="Picture 3" src="Images/c1f1-6.jpg"></p>
   <p class=FigureCaption>图 1-6. 把密码轮的环剪出来</p>
   </td>
   <td width=333 valign=bottom style='width:249.55pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal align=center style='text-align:center;page-break-after:
-  avoid'><img width=259 height=155 id="Picture 71"
-  src="Images/c1f1-7.jpg"></p>
+  avoid'><img width=259 height=155 id="Picture 71" src="Images/c1f1-7.jpg"></p>
   <p class=FigureCaption>图 1-7. 剪出来的环</p>
   <p class=MsoNormal>&nbsp;</p>
   </td>
   <td width=20 valign=top style='width:15.2pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal><img width=152 height=255 id="Picture 73"
-  src="Images/c1f1-8.jpg"></p>
+  <p class=MsoNormal><img width=152 height=255 id="Picture 73" src="Images/c1f1-8.jpg"></p>
   <p class=FigureCaption>图 1-8. 完成的密码轮.</p>
   </td>
   <td width=20 valign=top style='width:15.2pt;padding:0in 5.4pt 0in 5.4pt'>
@@ -761,8 +756,7 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
   <p class=MsoNormal>用鼠标点转轮，然后移动鼠标让转轮旋转直至转到想要的那个密钥到位。最后再点鼠标一次转轮就会停止转动了。</p>
   </td>
   <td width=283 valign=top style='width:2.95in;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal align=center style='text-align:center'><img width=240
-  height=230 id="Picture 22" src="Images/c1f1-9.jpg"></p>
+  <p class=MsoNormal align=center style='text-align:center'><img width=240 height=230 id="Picture 22" src="Images/c1f1-9.jpg"></p>
   <p class=FigureCaption>Figure 1-9. The online cipher wheel.</p>
   </td>
  </tr>
@@ -1074,9 +1068,8 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
 
 要加密的英文中的每一个字母，都在外环中找到他们的位置并用相对应的内环上的字母。第一个字母是T（T是在“The secret……”的第一个字母），我们在外环上找到字母T然后找到对应的内环上的字母，B。因此在我们的密文中T全部用B做替换（如果我们用的是除了8之外的另外一个数字作为密钥，那么明文中的T就会被另外一个字母代替。）   
 
-接下来的字母是H，会被替换成P。E会变成M。如此对整个消息做编码之后，就由“The secret password is Rosebud.”变成“Bpm amkzmb xiaaewzl qa Zwamjcl.”这样就可以把这个加密过的消息发给某人（或者写下来给自己保存），除非你把密钥（数字8）告诉别人，不然没有人可以读出它是什么意思。
-<p class=MsoNormal align=center style='text-align:center'><img width=308
-height=227 id="Picture 23" src="Images/c1f1-10.jpg"></p>  
+接下来的字母是H，会被替换成P。E会变成M。如此对整个消息做编码之后，就由“The secret password is Rosebud.”变成“Bpm amkzmb xiaaewzl qa Zwamjcl.”这样就可以把这个加密过的消息发给某人（或者写下来给自己保存），除非你把密钥（数字8）告诉别人，不然没有人可以读出它是什么意思。  
+<p class=MsoNormal align=center style='text-align:center'><img width=308 height=227 id="Picture 23" src="Images/c1f1-10.jpg"></p>    
 外环上的每一个字母总是被编码成内环上的同一个字母。更节省时间的做法是在查找第一个T的时候得知应该编码为B，那么就把所有的T变成B。这样每一个字母就只需要做一次查找的操作了。  
 
 ###用密码轮解码  
