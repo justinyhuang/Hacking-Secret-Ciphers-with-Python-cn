@@ -1581,6 +1581,8 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
 5. 最终结果对应的字母就是密文中的字母。   
 6. 重复第2到5步。   
 
+##test2   
+
 下表演示了如何用密钥13加密“Hello. How are you”中的所有字母。每一列都展示了将左边明文字母转换为右边密文字母所需的步骤。  
 
 <p class=TableCaption>表 1-1. 用纸和笔The steps to encrypt “Hello. How are you?” with
@@ -2059,7 +2061,10 @@ paper and pencil.</p>
   </td>
  </tr>
 </table>   
-</div>
+</div>    
+
+##test1   
+
 解码的时候，就要用到负数的知识了。如果你不知道如何对负数做加减，<a>http://invpy.com/neg</a>有一段教学。    
 解码的方法和编码类似，只是用减法而不是加法。比如说密文中的B，数字是1。1-13得到-12。和前面编码时“减26”的规则类似，当解码的时候运算结果小于0，我们就需要一个“加26”规则。-12+26是14。这样密文中的B就被解码成字母O了。  
 <p class=TableCaption>Table 1-2. The steps to decrypt the ciphertext with paper and pencil.</p>
