@@ -1581,12 +1581,9 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
 5. 最终结果对应的字母就是密文中的字母。   
 6. 重复第2到5步。   
 
-##test2   
-
 下表演示了如何用密钥13加密“Hello. How are you”中的所有字母。每一列都展示了将左边明文字母转换为右边密文字母所需的步骤。  
 
-<p class=TableCaption>表 1-1. 用纸和笔The steps to encrypt “Hello. How are you?” with
-paper and pencil.</p>
+<p class=TableCaption>表 1-1. 用纸和笔The steps to encrypt “Hello. How are you?” with paper and pencil.</p>
 
 <div align=center>
 <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
