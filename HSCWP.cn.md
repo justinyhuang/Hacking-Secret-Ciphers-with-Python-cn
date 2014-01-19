@@ -1587,48 +1587,31 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
 paper and pencil.</p>
 
 <div align=center>
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
- style='border-collapse:collapse'>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
  <tr>
-  <td width=73 valign=top style='width:54.9pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=73 valign=top style='width:54.9pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Plaintext</p>
   <p class=TableHeader>Letter</p>
   </td>
-  <td width=72 valign=top style='width:.75in;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=72 valign=top style='width:.75in;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Plaintext Number</p>
   </td>
-  <td width=30 valign=top style='width:22.5pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=30 valign=top style='width:22.5pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>+</p>
   </td>
-  <td width=42 valign=top style='width:31.5pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=42 valign=top style='width:31.5pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Key</p>
   </td>
-  <td width=54 valign=top style='width:40.75pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=54 valign=top style='width:40.75pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Result</p>
   </td>
-  <td width=72 valign=top style='width:53.75pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=72 valign=top style='width:53.75pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Subtract 26?</p>
   </td>
-  <td width=54 valign=top style='width:40.75pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=54 valign=top style='width:40.75pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Result</p>
   </td>
-  <td width=77 valign=top style='width:57.8pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=77 valign=top style='width:57.8pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Ciphertext</p>
   <p class=TableHeader>Letter</p>
   </td>
@@ -2050,36 +2033,28 @@ paper and pencil.</p>
   </td>
  </tr>
  <tr>
-  <td width=73 valign=top style='width:54.9pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=73 valign=top style='width:54.9pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing>U</p>
   </td>
-  <td width=72 valign=top style='width:.75in;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=72 valign=top style='width:.75in;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing>20</p>
   </td>
-  <td width=30 valign=top style='width:22.5pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=30 valign=top style='width:22.5pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing>+</p>
   </td>
-  <td width=42 valign=top style='width:31.5pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=42 valign=top style='width:31.5pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing>13</p>
   </td>
-  <td width=54 valign=top style='width:40.75pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=54 valign=top style='width:40.75pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing align=left style='text-align:left'>= 33</p>
   </td>
-  <td width=72 valign=top style='width:53.75pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=72 valign=top style='width:53.75pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing>- 26</p>
   </td>
-  <td width=54 valign=top style='width:40.75pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=54 valign=top style='width:40.75pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing align=left style='text-align:left'>= 7</p>
   </td>
-  <td width=77 valign=top style='width:57.8pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=77 valign=top style='width:57.8pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing align=right style='text-align:right'>7 = H</p>
   </td>
  </tr>
@@ -2087,53 +2062,35 @@ paper and pencil.</p>
 </div>
 解码的时候，就要用到负数的知识了。如果你不知道如何对负数做加减，<a>http://invpy.com/neg</a>有一段教学。    
 解码的方法和编码类似，只是用减法而不是加法。比如说密文中的B，数字是1。1-13得到-12。和前面编码时“减26”的规则类似，当解码的时候运算结果小于0，我们就需要一个“加26”规则。-12+26是14。这样密文中的B就被解码成字母O了。  
-<p class=TableCaption>Table 1-2. The steps to decrypt the ciphertext with paper
-and pencil.</p>
+<p class=TableCaption>Table 1-2. The steps to decrypt the ciphertext with paper and pencil.</p>
 
 <div align=center>
 
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
- style='border-collapse:collapse'>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
  <tr>
-  <td width=85 valign=top style='width:63.9pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=85 valign=top style='width:63.9pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Ciphertext</p>
   <p class=TableHeader>Letter</p>
   </td>
-  <td width=82 valign=top style='width:61.7pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=82 valign=top style='width:61.7pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Ciphertext Number</p>
   </td>
-  <td width=20 valign=top style='width:14.8pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=20 valign=top style='width:14.8pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>-</p>
   </td>
-  <td width=42 valign=top style='width:31.5pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=42 valign=top style='width:31.5pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Key</p>
   </td>
-  <td width=60 valign=top style='width:45.0pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=60 valign=top style='width:45.0pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Result</p>
   </td>
-  <td width=42 valign=top style='width:31.5pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=42 valign=top style='width:31.5pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Add 26?</p>
   </td>
-  <td width=60 valign=top style='width:45.0pt;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=60 valign=top style='width:45.0pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Result</p>
   </td>
-  <td width=72 valign=top style='width:.75in;border-top:double windowtext 1.5pt;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=72 valign=top style='width:.75in;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableHeader>Plaintext</p>
   <p class=TableHeader>Letter</p>
   </td>
@@ -2555,36 +2512,28 @@ and pencil.</p>
   </td>
  </tr>
  <tr>
-  <td width=85 valign=top style='width:63.9pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=85 valign=top style='width:63.9pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing>H</p>
   </td>
-  <td width=82 valign=top style='width:61.7pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=82 valign=top style='width:61.7pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing>7</p>
   </td>
-  <td width=20 valign=top style='width:14.8pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=20 valign=top style='width:14.8pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing>-</p>
   </td>
-  <td width=42 valign=top style='width:31.5pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=42 valign=top style='width:31.5pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing>13</p>
   </td>
-  <td width=60 valign=top style='width:45.0pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=60 valign=top style='width:45.0pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing align=left style='text-align:left'>= -6</p>
   </td>
-  <td width=42 valign=top style='width:31.5pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=42 valign=top style='width:31.5pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing>+ 26</p>
   </td>
-  <td width=60 valign=top style='width:45.0pt;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=60 valign=top style='width:45.0pt;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing align=left style='text-align:left'>= 20</p>
   </td>
-  <td width=72 valign=top style='width:.75in;border:none;border-bottom:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
+  <td width=72 valign=top style='width:.75in;border:none;border-bottom:double windowtext 1.5pt; padding:0in 5.4pt 0in 5.4pt'>
   <p class=TableListing align=right style='text-align:right'>20 = U</p>
   </td>
  </tr>
