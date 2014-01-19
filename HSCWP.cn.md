@@ -20,18 +20,18 @@ Justin Huang 译
 * 分享：包括拷贝、传播、展示以及使用书中的内容  
 * 加工：结合本书中的内容制作相关的产品   
 
-以上描述也可以在这个链接中找到： http://creativecommons.org/licenses/by-nc-sa/3.0/us/ 。对本书的正常使用以及读者的其他权益不会受到上述条例的影响。对于本书用到的许可证，有一份容易理解的总结可以中这个链接中找到：http://creativecommons.org/licenses/by-nc-sa/3.0/us/legalcode 。  
+以上描述也可以在这个链接中找到：<a>http://creativecommons.org/licenses/by-nc-sa/3.0/us/</a>。对本书的正常使用以及读者的其他权益不会受到上述条例的影响。对于本书用到的许可证，有一份容易理解的总结可以中这个链接中找到：<a>http://creativecommons.org/licenses/by-nc-sa/3.0/us/legalcode</a>。  
 
 关于第三版   
 在此特别鸣谢Ari Lacenski。非常感谢她。如果没有她的帮助，基本上书中的每一页都有拼写错误。  
 感谢Jason Kibbe。   
-封面中锁的相片来自“walknboston”的 http://www.flickr.com/photos/walkn/3859852351/ 。   
+封面中锁的相片来自“walknboston”的<a>http://www.flickr.com/photos/walkn/3859852351/</a>。   
 罗密欧与朱丽叶等已经发表的文字则是取自Project Gutenberg这一项目。  
 有很多图片来自Wikipedia。  
-布满皱痕的纸张图片是Pink Sherbet的摄影作品，在 http://www.flickr.com/photos/pinksherbet/2978651767/ 。  
+布满皱痕的纸张图片是Pink Sherbet的摄影作品，在<a>http://www.flickr.com/photos/pinksherbet/2978651767/</a>。  
 书中计算机用户的图标是Katzenbaer的作品。   
 
-#####如果您通过BT下载了本书，很可能它已经过时了。请到 http://inventwithpython.com/hacking 去下载本书的最新版本。  
+#####如果您通过BT下载了本书，很可能它已经过时了。请到<a>http://inventwithpython.com/hacking</a>去下载本书的最新版本。  
 
 ISBN 978-1482614374   
 第一版
@@ -41,7 +41,7 @@ ISBN 978-1482614374
 <p align="center"><img src="Images/NedroidPictureDiary.jpg"/></p>
 
 <div align="right">
-Nedroid Picture Diary by Anthony Clark, http://nedroid.com
+Nedroid Picture Diary by Anthony Clark, <a>http://nedroid.com</a>
 </div>
 
 在电影或是电视里面看到大虾们黑掉人家的电脑总是很热血的：疯狂地敲键盘，然后一堆毫无意义的1和0在屏幕上狂飙。这些影视作品让人们觉得黑客技术(hecking)非天才不能学之：简直就是魔术。   
@@ -79,7 +79,7 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
 
 本书写给那些对信息加密，hacking或是密码学一无所知的人。书中提到的密码（除了最后一章中的RSA密码）都是几个世纪前的技术。现代计算机已经有足够的运算能力去破解他们加密的信息。因此，不会有哪一个当代的机构或者是个人还会使用这些加密方法。所以也没有什么理由会让你因为学习了本书而陷入什么法律纠纷【译者：您老怎么不早说？！开个玩笑】  
 
-本书也是写给那些之前完全没有接触过计算机程序的读者的。书中用Python这门语言教授基本的编程概念。Python是初学程序者的最佳入门语言：简单易读兼具强大的功能，就连职业的软件工程师也都在用它。Python的运行软件可以在 http://python.org 免费下载，在Linux，Windows，OS X以及Raspberry Pi上都可以运行。  
+本书也是写给那些之前完全没有接触过计算机程序的读者的。书中用Python这门语言教授基本的编程概念。Python是初学程序者的最佳入门语言：简单易读兼具强大的功能，就连职业的软件工程师也都在用它。Python的运行软件可以在<a>http://python.org</a>免费下载，在Linux，Windows，OS X以及Raspberry Pi上都可以运行。  
 
 关于“黑客”（hacker）有两种定义：一种是指那些对某个系统（比如一种加密方法或是一个软件）进行了深入的学习而有很好理解的人，他们不再受限于系统常规的条条框框，能够创造性的修改系统使其以新的方式运作。   
 
@@ -90,8 +90,8 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
 
 另外，不要将书中的任何加密程序应用于实际文件。这些程序玩玩是挺好的，但是它们不是真正安全的加密手段。而一般而言，你也不应该信赖你自己创造的加密方法。加密界的传奇人物Bruce Schneier这样说过：“任何人，不论莽撞的新手还是最优秀的加密大师，都能够创造出他自己无法破译的加密算法。真正难的，是如何创造出所有人经过多年的研究都无法破解的算法。而要证明这一点，唯一的方法就是让其他加解密高手对你创造的算法进行多年的分析和研究。”【译者：看到这里我想死的心都有了……】  
 
-本书基于Creative Commons license发布。可以免费的拷贝传播（只要你不拿它收钱）。在它的网站 http://invetwithpython.com/hacking 有免费下载。如果你有关于书中程序如何工作的任何问题，欢迎电邮 al@inventwithpython.com 给我。  
-【译者：本书的中文版在 https://github.com/justinyhuang/Hacking-Secret-Ciphers-with-Python-cn 有最新的版本提供下载，如果你有关于本书翻译的任何问题和建议，欢迎电邮 yang.huang@ymail.com 给我 :)】
+本书基于Creative Commons license发布。可以免费的拷贝传播（只要你不拿它收钱）。在它的网站<a>http://invetwithpython.com/hacking</a>有免费下载。如果你有关于书中程序如何工作的任何问题，欢迎电邮 al@inventwithpython.com 给我。  
+【译者：本书的中文版在<a>https://github.com/justinyhuang/Hacking-Secret-Ciphers-with-Python-cn</a>有最新的版本提供下载，如果你有关于本书翻译的任何问题和建议，欢迎电邮 yang.huang@ymail.com 给我 :)】
 
 ---
 
@@ -693,9 +693,9 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
 ###做个纸密码轮  
 在学习怎样用计算机编码和解码之前，我们先用纸来做一个简单的工具。有了这个工具就可以简单的把英文（称为**明文**（**plaintext**））转换为隐藏了秘密的“垃圾字符”（称为**密文**（**ciphertext**））。**密码**（**cipher**）描述了一系列的规则用来在明文和密文之间转换。这些规则通常都会用到密钥（secret key）。本书将介绍几种不同的密码。  
 
-首先要介绍的是Caesar密码。Julius Caesar在两千年前就在使用这种密码了。它的好处是简单易学。同时因为简单，它的缺点就是容易被破解。不过我们在学习的时候可以用来作为练习。在Wikipedia上有关于Caesar密码更详尽的信息：http://en.wikipedia.org/wiki/Caesar_cipher 。  
+首先要介绍的是Caesar密码。Julius Caesar在两千年前就在使用这种密码了。它的好处是简单易学。同时因为简单，它的缺点就是容易被破解。不过我们在学习的时候可以用来作为练习。在Wikipedia上有关于Caesar密码更详尽的信息：<a>http://en.wikipedia.org/wiki/Caesar_cipher</a>。  
 
-为了用Caesar密码将明文转为密文，我们需要制作一个密码轮（也有人称它为密码盘）。在这里你可以将书中的密码轮复印下来，或者到http://invpy.com/cipherwheel
+为了用Caesar密码将明文转为密文，我们需要制作一个密码轮（也有人称它为密码盘）。在这里你可以将书中的密码轮复印下来，或者到<a>http://invpy.com/cipherwheel</a>
 上去把它打印出来。把那两个圆剪出来并像图1-8那样重叠在一起。  
 
 ---
@@ -1388,7 +1388,7 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
 </table>    
 
 ###第一章 练习一   
-请到 http://invpy.com/hackingpractice1A 查看。  
+请到<a>http://invpy.com/hackingpractice1A</a>查看。  
 ####同学们！不要跳过这些练习！  
 ####书中没有那么多的篇幅可以列出这些练习，可是他们还是很重要的。   
 ####只是读书的话是不能成为黑客的，你还需要动手实践！    
@@ -2060,8 +2060,6 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
 </table>   
 </div>    
 
-##test1   
-
 解码的时候，就要用到负数的知识了。如果你不知道如何对负数做加减，<a>http://invpy.com/neg</a>有一段教学。    
 解码的方法和编码类似，只是用减法而不是加法。比如说密文中的B，数字是1。1-13得到-12。和前面编码时“减26”的规则类似，当解码的时候运算结果小于0，我们就需要一个“加26”规则。-12+26是14。这样密文中的B就被解码成字母O了。  
 <p class=TableCaption>Table 1-2. The steps to decrypt the ciphertext with paper and pencil.</p>
@@ -2545,7 +2543,7 @@ Nedroid Picture Diary by Anthony Clark, http://nedroid.com
 可见，没有密码轮也可以使用Caesar密码。如果记住了字母和数字之间的关系，就连那个字母-数字表也不需要写出来了。可以直接用心算然后直接写出密文。   
 
 ###第一章 练习二
-请访问 http://invpy.com/hackingpractice1B 。  
+请访问<a>http://invpy.com/hackingpractice1B</a/> 。  
 
 ###双重加密？
 你也许会这样想：如果把消息用不同的密钥编码两次，加密的强度是不是也翻倍了呢？对于Caesar密码来说（以及大多数的其他密码方法），事实并非如此。我们就先来试试双重加密，再看看为什么结果并不像我们想象的那样。   
@@ -2586,7 +2584,7 @@ Eric Hughes，《加密爱好者宣言》，1993
 ###下载安装Python
 在开始学习编程之前，需要先安装一个叫做Python解释器的软件。（你可能需要找一个大人帮忙哦）这个解释器是一种可以理解Python语言指令的程序。如果没有这个解释器，计算机就不能理解Python的指令了。（以后的章节中，“Python”指的就是“Python解释器”）   
 
-我们将用Python语言编写程序，因此我们需要先从Python语言的官方网站，http://www.python.org，下载Python。取决于你的操作系统（Windows, OS X, 或者是像Ubuntu这样的Linux发行版），安装过程可能会有一些不一样。你可以参考http://invpy.com/installing/上的安装演示视频。  
+我们将用Python语言编写程序，因此我们需要先从Python语言的官方网站，<a>http://www.python.org</a>，下载Python。取决于你的操作系统（Windows, OS X, 或者是像Ubuntu这样的Linux发行版），安装过程可能会有一些不一样。你可以参考<a>http://invpy.com/installing/</a>上的安装演示视频。  
  
 **注意！**请务必安装Python3，而不是Python2。本书中的程序适用于Python3，如果在Python2上运行可能会出错。这一步非常重要，下面的小企鹅就是专门用来提醒你别忘记要安装的是Python3。
 <p class=MsoNormal align=center style='text-align:center'><img width=256
@@ -2594,7 +2592,7 @@ height=229 id="Picture 78" src="Images/c2f2-1.png"></p>
 
 <p class=FigureCaption>Figure 2-1. 这只奇怪的企鹅提醒您：“记得装Python3，不是Python2哦！”</p>
 ###在Windows下安装
-在http://www.python.org页面的左边有一排链接。点击Download进入下载页面，找到一个叫做Python3.3.0 Windows Installer（“Windows binary - does not include source”）的文件，点击这个文件链接下载它。（如果已经有比Python 3.3.0 更新的版本，就下载新的版本。）双击python-3.3.0.msi这个下载下来的文件，就会启动Python的安装程序。（如果没有起启动，尝试以下右击该文件，然后在弹出窗口中选择“安装”（Install）。）安装程序启动之后，点击下一步（Next）按钮并在接下来的选项中选择接受（accept）。不需要再做其他什么改动，安装结束后点击结束（Finish）就可以了。   
+在<a>http://www.python.org</a>页面的左边有一排链接。点击Download进入下载页面，找到一个叫做Python3.3.0 Windows Installer（“Windows binary - does not include source”）的文件，点击这个文件链接下载它。（如果已经有比Python 3.3.0 更新的版本，就下载新的版本。）双击python-3.3.0.msi这个下载下来的文件，就会启动Python的安装程序。（如果没有起启动，尝试以下右击该文件，然后在弹出窗口中选择“安装”（Install）。）安装程序启动之后，点击下一步（Next）按钮并在接下来的选项中选择接受（accept）。不需要再做其他什么改动，安装结束后点击结束（Finish）就可以了。   
 
 ###在OS X下安装
 在OS X下的安装和Windows下差不多。只是要在Python网站下载Mac的安装文件.dmg文件而不是.msi文件。下载该文件的链接在“Download Python Software”页面中，类似“Python 3.3.0 Mac OS X”。   
@@ -2604,7 +2602,7 @@ height=229 id="Picture 78" src="Images/c2f2-1.png"></p>
 我们还需要安装IDLE程序。在终端中输入“sudo apt-get install idel3”。同样的你也需要管理员密码完成安装。   
 
 ###下载 pyperclip.py
-本书中几乎所有的程序都会用到我写的一个模块，叫做pyperclip.py。利用该模块中的函数可以让你自己的程序从剪贴板中复制内容，也可以把需要复制的内容粘贴到剪贴板中去。Python本身是没有这个模块的。不过在http://invpy.com/pyperclip.py可以下载该模块。   
+本书中几乎所有的程序都会用到我写的一个模块，叫做pyperclip.py。利用该模块中的函数可以让你自己的程序从剪贴板中复制内容，也可以把需要复制的内容粘贴到剪贴板中去。Python本身是没有这个模块的。不过在<a>http://invpy.com/pyperclip.py</a>可以下载该模块。   
 
 这个模块文件需要放在你自己写的Python程序文件所在的同一个文件夹中。（文件夹的另外一个名字是目录。）否则你在运行自己程序的时候可能会看到下面的错误信息：    
 <div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
@@ -2641,7 +2639,7 @@ information.</p>
 ###书中的程序
 《用Python破译密码》这本书和其他编程书籍的区别之一，就是我们在这里提供的是完整的程序代码。这本书展示完成的程序并解释它们是如何工作的，而不是告诉读者编程的概念然后让他们自己搞清楚如何写自己的程序。   
 
-在读这本书的时候，希望读者你可以自己在IDLE中输入书中的源代码。不过也可以从本书的网站上下载这些源文件。如果需要下载，到http://invpy.com/hackingsource按其提示下载源文件即可。   
+在读这本书的时候，希望读者你可以自己在IDLE中输入书中的源代码。不过也可以从本书的网站上下载这些源文件。如果需要下载，到<a>http://invpy.com/hackingsource</a>按其提示下载源文件即可。   
 
 一般来说，建议大家从头读到尾。前面几个章节将介绍编程的基础概念。不过，Python是一种非常易懂的编程语言，因此很可能只要阅读了前面几章就基本上可以猜出来它的代码在做什么了。如果你是直接跳到后面读又发现有些不明白，可以回到前面的章节看看。或者把你的编程问题发邮件给作者，al@inventwithpython.com。   
 
@@ -2684,14 +2682,14 @@ information.</p>
 </div>
 
 ###在线追踪程序   
-追踪一段程序的过程就是像计算机运行代码一样，一次一行的模拟执行代码。读者可以在 http://invpy.com/hackingtraces 看到书中每一段程序的追踪过程。这些追踪页面上的每一步还有各种注解和提示解释程序在做什么，以便读者更好的理解程序是如何工作的。   
+追踪一段程序的过程就是像计算机运行代码一样，一次一行的模拟执行代码。读者可以在<a>http://invpy.com/hackingtraces</a>看到书中每一段程序的追踪过程。这些追踪页面上的每一步还有各种注解和提示解释程序在做什么，以便读者更好的理解程序是如何工作的。   
 
 ###用在线Diff工具检查自己输入的代码   
 亲自动手输入源代码对于学习Python来说是很有帮助的，可是有时候不经意的错误输入会导致程序崩溃。而且这种输入错误还不是那么容易找出来。    
 
 一种解决办法是将自己输入的程序复制黏贴到本书网站上的在线Diff工具【译者：diff，difference，diff工具就是用来查找文件之间差别的工具】。该Diff工具可以找出手动输入的程序和书中示例程序的任何差别。这样就可以很简单的找出输入的错误了。  
  
-这个Diff工具就在 http://invpy.com/hackingdiff 。同时在 http://invpy.com/hackingvideos 中还有一段关于如何使用这个工具的教学视频。   
+这个Diff工具就在<a>http://invpy.com/hackingdiff</a>。同时在<a>http://invpy.com/hackingvideos</a>中还有一段关于如何使用这个工具的教学视频。   
 
 ###复制粘贴文本   
 复制和粘贴文本是很有用的电脑技巧，尤其在本书中很多用于编码或解码的文本都很长。与其逐个输入，完全可以在本书网站上找到对应部分的电子版本，然后复制下来，直接粘贴到IDLE中去。   
@@ -2702,11 +2700,11 @@ information.</p>
 
 要注意的是，每次复制一段文本到剪贴板的时候，前一段复制的文本在剪贴板中就不存在了。
    
-在本书的网站，http://invpy.com/copypaste上有一段关于复制粘贴的教学视频。   
+在本书的网站，<a>http://invpy.com/copypaste</a>上有一段关于复制粘贴的教学视频。   
 
 
 ###更多有用的链接   
-关于编程和密码学有很多需要学习的东西，但并不是说现在就要全部学会它们。相信读者有时候会希望了解更多相关的细节或是需要更多的解释，而我又不能把它们全部放在这里，否则这本书就会变得非常厚了。涵盖如此多内容的一本厚书还很容易惹上火灾……于是我决定在本书的网站上提供一些链接指向更多有用的内容。学习本书中的知识并不需要掌握这些额外的内容，但它们可以帮助读者更好的学习本书。读者可以在http:/invpy.com找到这些链接（这个短地址就是“Invent with Python”的缩写。）   
+关于编程和密码学有很多需要学习的东西，但并不是说现在就要全部学会它们。相信读者有时候会希望了解更多相关的细节或是需要更多的解释，而我又不能把它们全部放在这里，否则这本书就会变得非常厚了。涵盖如此多内容的一本厚书还很容易惹上火灾……于是我决定在本书的网站上提供一些链接指向更多有用的内容。学习本书中的知识并不需要掌握这些额外的内容，但它们可以帮助读者更好的学习本书。读者可以在<a>http:/invpy.com</a>找到这些链接（这个短地址就是“Invent with Python”的缩写。）   
 
 最后，虽然我说了本书不太容易招惹火灾，但也请不要动歪脑筋想要烧掉它哦。  
 
