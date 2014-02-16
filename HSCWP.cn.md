@@ -3006,3 +3006,543 @@ spam的值现在是25，因为在fizz和eggs相加的时候也就是把存储在
 在本章中学到一个基本知识是在交互式命令行环境中输入Python指令。Python需要用严格的语法向它发指令，这是因为计算机不像人那样具备一些基本的常识可以理解复杂的要求，它只能接受非常简单的指令。我们还学到Python可以计算表达式的值（也就是将表达式简化为一个单一的值），同时我们知道了表达式就是由操作符（比如+或-）连接起来的数值（比如2或5）。另外一个知识就是可以将值存在变量中，这样一来程序就可以记住这些值，以便将来使用。    
 
 因为用交互式命令行可以一次输入一条指令然后观察它的结果是什么，所以这个工具很适合用来了解Python的指令的功能。下一章里我们将编写由多条指令组成并顺序执行的程序，而不是单一的一条指令了。再学习一些基本概念之后，就可以开始编写你第一个程序了！    
+
+<div style="page-break-after: always;"></div>
+
+###第四章 字符串与编程    
+本章将介绍：   
+·         字符串    
+·         字符串的拼接与复制    
+·         使用IDLE编写程序    
+·         在IDLE中保存和运行程序    
+·         print()函数    
+·         input()函数    
+·         注释    
+
+关于整数和数学就先到此为止。Python的用处远不止计算器而已。本章中我们来学习如何用变量存储文字，拼接文字，并把这些文字在屏幕上显示出来。我们还将编写第一个程序，用“Hello World！”来向用户打招呼，还可以让他输入名字。【译者：大凡编程方面的书籍第一个程序都是用来显示”Hello World！”，意思就是你的第一个程序诞生了，向这个残酷的世界打招呼。可是……那么多年了，是不是可以换一句捏？】    
+
+###字符串    
+在Python中我们把若干字符组成的文字称为字符串值（或简称字符串）。以后要涉及到的加密和破解程序都要和字符串值打交道，将诸如“One if by lan, two if by space.”这样的明文转为“Tqe kg im npqv, jst kg im oapxe.”这样的密文。在我们的程序中无论明文或是密文，都是字符串值。Python的程序中有许多方法对这些值做处理。    
+
+和整数还有浮点数一样，字符串值也可以存储在变量中。在输入字符串值的时候，用单引号（‘）来标识字符串的开始和结束。试试在命令行中输入以下内容：    
+<div style="border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt">
+<p class="SourceCodeExcerptCxSpFirst" style="border:none;padding:0in">&gt;&gt;&gt;spam = 'hello'</p>
+<p class="SourceCodeExcerptCxSpLast" style="border:none;padding:0in">&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+单引号不是字符串的一部分。Python能够识别‘hello’是一个字符串，而spam是一个变量。这是因为字符串是被引号包围的，变量名则没有。    
+
+如果现在在命令行中输入spam，将可以看到spam的值（也就是‘hello'字符串）。这是由于Python计算得出变量中存储的值，在这个例子中，值为’hello'。    
+
+<div style="border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt">
+<p class="SourceCodeExcerptCxSpFirst" style="border:none;padding:0in">&gt;&gt;&gt;spam = 'hello'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;spam</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">'hello'</p>
+<p class="SourceCodeExcerptCxSpLast" style="border:none;padding:0in">&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+字符串几乎可以由任意键盘上的字符组成。（稍后我们会讲到特殊的“转义符”）。下面都是一些字符串的例子：    
+
+<div style="border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt">
+<p class="SourceCodeExcerptCxSpFirst" style="border:none;padding:0in">&gt;&gt;&gt;'hello'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">'hello'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;'Hi there!'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">'Hi there!’</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;'KITTENS'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">'KITTENS'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;''</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">''</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;'7 apples, 14 oranges, 3 lemons'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">'7 apples,14 oranges, 3 lemons'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;'Anything not pertaining to elephants is irrelephant.'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">'Anything notpertaining to elephants is irrelephant.'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;'O*&amp;#wY%*&amp;OcfsdYO*&amp;gfC%YO*&amp;%3yc8r2'</p>
+<p class="SourceCodeExcerptCxSpLast" style="border:none;padding:0in">'O*&amp;#wY%*&amp;OcfsdYO*&amp;gfC%YO*&amp;%3yc8r2'</p>
+</div>
+
+值得注意的是，字符串’‘中没有任何字符，因为在单引号中什么字符也没有。我们称之为*空串*。   
+
+###用+号连接字符串    
+用+号可以将两个字符串合并为一个新的字符串。这种做法称为字符串连接。试试将’Hello' + ‘World！”输入到命令行：     
+
+<div style="border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt">
+<p class="SourceCodeExcerptCxSpFirst" style="border:none;padding:0in">&gt;&gt;&gt;'Hello' + 'World!'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">'HelloWorld!'</p>
+<p class="SourceCodeExcerptCxSpLast" style="border:none;padding:0in">&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+如果要在’Hello'和‘World！’中间加一个空格，可以在‘Hello'字符串的后面单引号中加一个空格，就像这样：    
+
+<div style="border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt">
+<p class="SourceCodeExcerptCxSpFirst" style="border:none;padding:0in">&gt;&gt;&gt;'Hello ' + 'World!'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">'Hello World!'</p>
+<p class="SourceCodeExcerptCxSpLast" style="border:none;padding:0in">&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+所以要记住，Python会严格按照要求将字符串连接起来。如果想要在连接后的结果中加入空格，那么在原来的字符串中就必须要有空格。    
+
++号可以将两个字符串连接称为一个新的字符串（’Hello' + ‘World！‘就称为’Hello World!‘），就和前面提到过的将两个整数相加得到一个新的整数一样（2 + 2得到4）。因为参与运算的数据类型不一样，Python就能判断应该进行怎样的运算。每一个值都有其对应的数据类型。’Hello‘的数据类型是字符串。5的类型是整数。通过数据类型我们（还有计算机）就可以知道这个数值的种类。    
+
++号可以用在有两个字符串或是两个整数的表达式中。可是如果有人要用+号连接字符串和整数，就会出错。试试下面的代码：    
+
+<div style="border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt">
+<p class="SourceCodeExcerptCxSpFirst" style="border:none;padding:0in">&gt;&gt;&gt;'Hello' + 42</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">Traceback(most recent call last):</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&nbsp; File"&lt;stdin&gt;", line 1, in &lt;module&gt;</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">TypeError:Can't convert 'int' object to str implicitly</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;'Hello' + '42'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">'Hello42'</p>
+<p class="SourceCodeExcerptCxSpLast" style="border:none;padding:0in">&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+###用＊号复制字符串   
+在字符串和整数之间用＊号可以实现该字符串的复制。这样可以将该字符串复制（也就是重复）整数多次。继续看代码:    
+
+<div style="border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt">
+<p class="SourceCodeExcerptCxSpFirst" style="border:none;padding:0in">&gt;&gt;&gt;'Hello' * 3</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">'HelloHelloHello'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;spam = 'Abcdef'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;spam = spam * 3</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;spam</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">'AbcdefAbcdefAbcdef'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;spam = spam * 2</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;spam</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">'AbcdefAbcdefAbcdefAbcdefAbcdefAbcdef'</p>
+<p class="SourceCodeExcerptCxSpLast" style="border:none;padding:0in">&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+＊号也可以参与两个整数的运算（会把他们相乘）。也可以参与一个字符串和一个整数的的运算（会实现字符串的复制）。不过它不能参与两个字符串的运算，这样做的话就会出错：    
+<div style="border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt">
+<p class="SourceCodeExcerptCxSpFirst" style="border:none;padding:0in">&gt;&gt;&gt;'Hello' * 'world!'</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">Traceback (most recent call last):</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&nbsp; File "&lt;stdin&gt;", line 1, in &lt;module&gt;</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">TypeError: can't multiply sequence by non-int of type 'str'</p>
+<p class="SourceCodeExcerptCxSpLast" style="border:none;padding:0in">&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+字符串的连接和复制展示了Python根据运算中数据类型来决定运算方法的能力。+号既可以做加法也可以连接字符串。＊号可以做乘法也可以复制字符串。   
+
+###用print()函数完成显示
+Python有另外一个指令，叫做print()函数。试试下面的代码：    
+<div style="border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt">
+<p class="SourceCodeExcerptCxSpFirst" style="border:none;padding:0in">&gt;&gt;&gt;print('Hello!')</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">Hello!</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">&gt;&gt;&gt;print(42)</p>
+<p class="SourceCodeExcerptCxSpMiddle" style="border:none;padding:0in">42</p>
+<p class="SourceCodeExcerptCxSpLast" style="border:none;padding:0in">&gt;&gt;&gt;<b>&nbsp;</b></p>
+</div>
+
+函数（比如例子中的print()）就是可以完成某个任务的一段代码，比如说用来将值在屏幕上显示的一段代码。Python提供了很多函数。“*调用*函数”指的就是执行函数中的代码。    
+
+前面的例子中，给函数print()的括号中传递了一个值，print()就会将该值在屏幕上显示出来。在调用函数时传递的值名字叫做*参数*。（参数和值其实是一样的，只是在值被传递给函数的时候通常被称为参数而已。）我们以后编写程序，print()函数就可以用来将文字显示在屏幕上。    
+也可以将表达式作为参数传递给print()函数，而不仅仅是某个值。之所以可以这样做是因为实际上表达式的值将被计算出来，再将该值传递给函数。试试看下面的字符串拼接表达式：    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;spam = 'Al'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;print('Hello, ' + spam)</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>Hello, Al</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>&gt;&gt;&gt;&nbsp;</p>
+</div>
+表达式'Hello, ' + spam计算的时候相当于'Hello, ' + 'Al'，也就相当于'Hello, Al'。这个字符串就是最后传递给print()函数的值了。   
+
+###转义符
+有时候字符串中可能会需要用到一些无法直接输入的字符。举个例子，在字符串中加入一个单引号。直接使用单引号会出错，因为Python会认为这个单引号是字符串结束的标志，进而误认为单引号后面本来应该也属于字符串一部分的字符是它看不懂的代码。【译者：有点绕，不好意思……】还是到命令行中来看这个例子吧：    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;print('Al's cat is named Zophie.')</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>  File&quot;&lt;stdin&gt;&quot;, line 1</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>   print('Al's cat is named Zophie.')</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>             ^</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>SyntaxError:invalid syntax</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+如果要在字符串中使用单引号，我们就需要用到转义符了。转义符是用一个反斜杠加上一个字符来表示的。比如，\t，\n还有\'。反斜杠的作用就是告诉Python，斜杠后面的字符是有特别意义的。用转义符再来试试前面的例子：    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt; print('Al\'s cat is named Zophie.')</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>Al's cat
+is named Zophie.</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+使用转义符可以在字符串中使用一些难以直接输入的字符。表4-1列出了Python中的一些转义符：   
+<p align=center>表 4-1. 转义符</p>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 style='margin-left:105.9pt;border-collapse:collapse'>
+ <tr>
+  <td width=145 valign=top style='width:108.9pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
+  <p class=TableHeader>转义符</p>
+  </td>
+  <td width=198 valign=top style='width:148.5pt;border-top:double windowtext 1.5pt; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none; padding:0in 5.4pt 0in 5.4pt'>
+  <p class=TableHeader>实际显示的字符</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.9pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=TableListing style='page-break-after:avoid'><span class=Literal>\\</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.5pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=TableListing style='page-break-after:avoid'>反斜杠 (\)</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.9pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=TableListing style='page-break-after:avoid'><span class=Literal>\'</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=TableListing style='page-break-after:avoid'>单引号 (')</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.9pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=TableListing style='page-break-after:avoid'><span class=Literal>\&quot;</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=TableListing style='page-break-after:avoid'>双引号 (&quot;)</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.9pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=TableListing style='page-break-after:avoid'><span class=Literal>\n</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=TableListing style='page-break-after:avoid'>换行符</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-bottom:double windowtext 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=TableListing><span class=Literal>\t</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.5pt;border:none;border-bottom:double windowtext 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=TableListing>制表符</p>
+  </td>
+ </tr>
+</table>
+
+反斜杠应该总是置于被转义的字符之前，哪怕只是想在字符串中使用反斜杠这个字符。比如说下面的这种代码是不能正常工作的：    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;print('He flew away in a green\teal helicopter.')</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>He flew away in a green    eal helicopter.</p>
+</div>
+
+这是因为“teal”中的“t”由于位于反斜杠的后面而被Python视为转义符。转义符\t相当于你按下键盘上的<kbd>Tab</kbd>键（就是制表符）。转义符的作用，重申一下，是用来在字符串中加入难以直接输入的字符的。   
+知道了这个以后，我们再试试下面的代码：    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;print('He flew away in a green\\teal helicopter.')</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>He flew away in a green\teal helicopter.</p>
+</div>
+
+###引号和双引号
+在Python这个语言中，并不是只能用单引号来表示一个字符串的。还可以使用双引号。下面两行代码显示的是一样的内容：    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;print('Hello world')</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>Hello world</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;print(&quot;Hello world&quot;)</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>Hello world</p>
+</div>
+
+不过不能混用单引号和双引号。下面的代码会出错：    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;print('Hello world&quot;)</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>SyntaxError: EOL while scanning single-quoted string</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+我个人比较喜欢使用单引号，因为这样我就不需要使用Shift键来输入字符串了【译者：输入双引号需要同时按下<kbd>Shift</kbd>和<kbd>‘</kbd>键，而输入单引号就只需要按下<kbd>‘</kbd>键因而更方便】。这更方便，而且计算机也不在乎你用哪一种表示方式。    
+要注意的是，正如必须在单引号引用的字符串中用\'来表示<kbd>‘</kbd>一样，中双引号引用的字符串中也需要用\"来表示<kbd>"</kbd>这个字符。看看下面两行例子：    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;print('I asked to borrow Alice\'s car for a week. She said, &quot;Sure.&quot;')</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>I asked to borrow Alice's car for a week. She said, &quot;Sure.&quot;</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;print(&quot;She said, \&quot;I can't believe you let him borrow your car.\&quot;&quot;)</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>She said,
+&quot;I can't believe you let him borrow your car.&quot;</p>
+</div>
+
+在单引号引用的字符串中可以不用转义符表示双引号，在双引号引用的字符串中可以不用转义符表示单引号。以Python解析器的能力，它还是会知道如果字符串用某一种引号开始，那么另外一种引号就不是字符串结束的标志了。    
+
+###第四章练习A
+参见<a>http://invpy.com/hackingpractice4A</a>    
+
+###字符串索引
+以后的密码程序会经常需要在一个字符串中取出某一个字符。字符串索引的表示方法就是在字符串值（或者是存储有字符串的变量）后面加上方括号[和]并在括号中填入一个数字。这个数字叫做*索引*，用来告诉Python字符串中第几个字符是你想要的。字符串中第一个字符的索引是0，第二个字符的索引是1，第三个的索引是2，以此类推。    
+
+试试在命令行中输入下面的代码：    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;spam = 'Hello'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;spam[0]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'H'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;spam[1]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'e'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;spam[2]</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>'l'</p>
+</div>
+
+注意，表达式spam[0]计算得出的结果会是字符串‘H'，因为H是字符串’Hello’的第一个字符。*要记住索引是从0而不是从1开始的。*这就是为什么H的所以是0，而不是1了。    
+<p class=MsoNormal align=center style='text-align:center'><img width=253 height=87 src="Images/c4f4-1.jpg"></p>
+<p align=center>图 4-1. 字符串‘Hello'及其索引</p>
+
+字符串索引既可以用于存储有字符串的变量，也可以用于字符串本身，如‘Zophie'。    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;'Zophie'[2]</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>'p'</p>
+</div>
+
+表达式’Zophie‘[2]计算的结果是字符串’p'。字符串‘p'和其他的字符串一样，也可以保存在变量里。   
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;eggs = 'Zopie'[2]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;eggs</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'p'</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+如果输入的索引数字超出字符串本身的长度，Python就会提示’index out of range‘错误【译者：意为”超出索引范围”】。在‘Hello’中只有5个字符。如果尝试用索引10，Python就会提示我们所用的索引超出范围：    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;'Hello'[10]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>Traceback (most recent call last):</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>IndexError: string index out of range</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+###负数索引   
+负数索引从字符串最后一个字符开始向第一个字符移动。负数索引 -1 就指向字符串的最后一个字符。索引 -2 指向倒数第二个字符，一次类推。    
+
+试着输入以下代码：    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;'Hello'[-1]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'o'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;'Hello'[-2]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'l'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;'Hello'[-3]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'l'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;'Hello'[-4]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'e'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;'Hello'[-5]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'H'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;'Hello'[0]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'H'</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>&gt;&gt;&gt;&nbsp;</p>
+</div>
+注意，索引 -5 和 0 指向的都是同一个字符。大多数时候我们还是会使用正数索引，不过有些情况下用负数索引会更方便。    
+
+###字符串切分    
+如果需要在字符串中提取多于一个字符，用字符串切分技术就比字符串索引要方便很多。切分使用的也是 [ 和 ] 方括号，不过括号中有两个数字索引而不是一个。这两个数字中由冒号 ： 分隔开。 输入下面的代码看看：     
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;'Howdy'[0:3]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'How'</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+字符串被切分后的结果会*以第一个索引指向的字符开始，直到第二个索引指向的字符为止，但是不包括这个字符*。索引 0 指向字符串‘Howdy’中的‘H’，3 指向的是‘d’。因为切分下来的部分不包括第二个索引指向的字符，所以切分操作'Howdy'[0:3]计算的结果就是字符串‘how’。     
+输入下面的代码：     
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;'Hello world!'[0:5]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'Hello'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;'Hello world!'[6:12]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'world!'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;'Hello world!'[-6:-1]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'world'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;'Hello world!'[6:12][2]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'r'</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+注意表达式'Hello world!'[6:12][2]中将先计算出结果'world!'[2]，接下来的计算就是字符串索引了，结果是'r'。    
+和索引不同的是，切分计算中如果给出的数字大于字符串的合理索引值，也不会报错。这种情况下得到的是尽可能多的切分结果：    
+
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;'Hello'[0:999]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'Hello'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;'Hello'[2:999]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'llo'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;'Hello'[1000:2000]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>''</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+表达式 'Hello'[1000:2000] 将返回一个空的字符串，因为索引值1000已经超过了字符串的最后一个字符的索引，这样的一个切分找不到合适的字符。    
+
+###省略切分索引    
+如果在切分中省略第一个索引，Python将自动默认是从第一个索引开始切分。表达式 'Howdy'[0:3] 和 'Howdy'[:3] 计算出来的是同样的字符串：    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;'Howdy'[:3]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'How'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;'Howdy'[0:3]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'How'</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+如果省略的是第二个索引，Python将自动默认切分操作提取字符串后面剩下的部分：     
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;'Howdy'[2:]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'wdy'</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+切分是从长字符串中提取“子串”的简单方法。 （不过实际上呢，所谓的“子串”也只不过是像其他字符串一样的字符串而已。）输入下面的代码看看：     
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>&gt;&gt;&gt;myName = 'Zophie the Fat Cat'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;myName[-7:]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'Fat Cat'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;myName[:10]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'Zophie the'</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>&gt;&gt;&gt;myName[7:]</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>'the Fat Cat'</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>&gt;&gt;&gt;&nbsp;</p>
+</div>
+
+###第4章 练习B
+请见<a>http://invpy.com/hackingpractice4B</a>。     
+
+###在IDLE编辑器中编写程序    
+一开始到现在我们都还停留在命令行中写一次命令执行一次的阶段。可是当我们编写程序的时候，是需要写下若干指令然后一起执行的。不需要我们告诉它先执行一步再执行下一步。是的，现在就让我们开始编写第一个程序吧！     
+
+提供Python命令行的程序名字叫做IDLE（也就是*I*nteractive *D*eve*L*opment *E*nvironment，交互式开发环境的英文）。除命令行之外IDLE还提供了一个文件编辑器。      
+
+在Python的命令行窗口上方，点击 *File ► New Window*。就会出现一个新的空白窗口，在这里面就可以输入程序了。这个新的窗口就是 *文件编辑器*。编辑器的底部会显示光标在文件中的当前行数和列数。    
+<p class=MsoNormal align=center style='text-align:center'><img width=318 height=201 src="Images/c4f4-2.png"></p>
+<p align=center>图 4-2. 文件编辑器窗口，当前光标位于第1行第0列。</p>
+
+要分别命令行窗口和编辑器窗口其实很简单，因为命令行窗口中总是有>>>提示符。    
+
+###Hello World!
+程序员界有这么一个传统，学习一门新语言的时候写的第一个程序就是在屏幕上显示“Hello World!”【译者：看来这次我们也并能免俗了】现在我们就来编写一个Hello World程序吧。     
+
+在新的文件编辑器中输入下面的文字。由于这种文字包含了计算机指令，Python将按照这些指令去完成程序的功能，因此这些文字就称为程序的*源代码*。       
+
+###Hello World的源代码
+这段代码可以在<a>http://invpy.com/hello.py</a>上下载。如果你自己输入这段代码却发现运行时出了错，可以用<a>http://invpy.com/hackingdiff</a>上的在线diff工具把你自己的代码于书中的代码做比较看看哪里不一样。（如果你还是没搞清楚，也可以向al@inventwithpython.com发邮件问我。）     
+<div style='border:double #404040 1.5pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeFeaturedCxSpFirst align=right style='text-align:right'><span class=SourceCodeFilename><span style='font-size:13.0pt;line-height:115%'>hello.py</span></span></p>
+<p class=SourceCodeFeaturedCxSpMiddle><span class=SourceLineNumber>1.</span> <font color = "7F7F7F"> # This program says hello and asks for my name.</font></p>
+<p class=SourceCodeFeaturedCxSpMiddle><span class=SourceLineNumber>2.</span> <font color = "000000">print('Hello world!')</font></p>
+<p class=SourceCodeFeaturedCxSpMiddle><span class=SourceLineNumber>3.</span> <font color = "000000">print('What is your name?')</font></p>
+<p class=SourceCodeFeaturedCxSpMiddle><span class=SourceLineNumber>4.</span> <font color = "000000">myName = input()</font></p>
+<p class=SourceCodeFeaturedCxSpLast><span class=SourceLineNumber>5.</span> <font color = "000000">print('It is good to meet you, ' + myName)</font></p>
+</div>     
+
+在IDLE程序中不同的指令有不同的颜色。输入上面的代码之后，窗口中的程序看起来应该是这样的：     
+<p class=MsoNormal align=center style='text-align:center'><img width=398 height=185 src="Images/c4f4-3.png"></p>
+<p align=center>图 4-3. 输入代码后的文件编辑器会是这样的。</p>     
+
+###保存程序    
+完成源代码输入之后，我们需要把程序保存起来，这样一来下次启动IDLE的时候就不需要重新输入同样的程序了。保存程序的方法是在文件编辑器窗口的顶部菜单中选择 *File ► Save As*。一个“另存为”的窗口会出现，在其中的文件名一栏输入 hello.py，然后点击 *Save*。（见图4-4）    
+
+在输入的时候应该时不时保存程序。这样一来，如果计算机崩溃或者是不小心退出了IDLE的话就不至于丢失已经输入的内容了。在Windows或是Linux中可以用快捷键<kbd>Ctrl-S</kbd>，在OS X中可以用快捷键<img src="Images/apple-command-key.gif">-S来保存程序文件。    
+
+<p class=MsoNormal align=center style='text-align:center'><img width=404 height=299 src="Images/c4f4-4.png"></p>
+<p align=center>图 4-4. 保存程序</p>   
+
+在本书的网站，<a>http://invpy.com/hackingvideos</a>，可以找到一段视频教学演示如何使用文件编辑器。    
+
+###运行程序    
+现在可以开始运行程序了。点击 *运行 ► 运行模块* 或是直接按下键盘上的<kbd>F5</kbd>。程序会在最开始运行IDLE时出现的命令行窗口中运行。要记住是在文件编辑器的窗口中按下<kbd>F5</kbd>，而不是交互式命令行的窗口。    
+
+程序问姓名的时候，请你像图4-5中那样输入你的名字：     
+
+<p class=MsoNormal align=center style='text-align:center'><img width=284 height=222 src="Images/c4f4-5.png"></p>
+
+<p class=FigureCaption>图 4-5 在运行“Hello World”程序的时候交互式命令行窗口的样子</p>
+
+输入姓名后按<kbd>Enter</kbd>，程序会用你输入的名字向你（也就是正在运行程序的用户）
+问好。恭喜你啦！你已经完成了第一个程序，并升级成为初级程序员咯！（如果要再次运行这个程序，按<kbd>F5</kbd>就可以）    
+
+如果你看到下面的错误：    
+
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>Hello world!</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>What is your name?</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>Albert</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>Traceback (most recent call last):</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>  File &quot;C:/Python27/hello.py&quot;, line 4, in &lt;module&gt;</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>    myName = input()</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>  File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>NameError: name 'Albert' is not defined</p>
+</div>
+
+这意味着你使用的是Python2而不是Python3。第一章中的小企鹅就会很伤心。（这样的错误是由于Python2和3中input()函数的差异造成的）如果你看到这样的错误，请到<a>http://python.org/getit</a>安装好Python3再继续。    
+
+###打开保存过的程序   
+点击窗口上方边上的X，关闭文件编辑器。如果要重新载入之前保存的程序，就在菜单中选择 *File ► Open*。现在就试试吧，然后在弹出的窗口中选择hello.py再点击 *Open* 按钮。之前保存的hello.py程序就应该出现在文件编辑器的窗口中了。     
+
+###“Hello World”程序是如何工作的
+我们刚才输入的每一行命令都会告诉Python应该做什么。计算机程序和菜谱非常相像：先做第一步，第二步，一直到最后。每一条指令都是按照顺序执行的，从程序最顶端开始向下运行。程序运行第一行指令后继续运行，运行第二行，第三行，一直运行下去。    
+
+我们把这种一步一步执行程序指令称为*程序的执行*，或者简称*执行*。程序的执行由第一行往下走。可是程序的执行有时候也可以跳过一些代码而不是由上至下运行每一行代码，我们将在下一章介绍。     
+
+下面让我们一行一行的来观察我们写的程序是如何工作的，从第一行开始。    
+
+###注释
+<div style='border:double #404040 1.5pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p align=right>hello.py</p>
+<p class=SourceCodeFeatured><span class=SourceLineNumber>1.</span><font color = "7F7F7F"> # This program says hello and asks for my name.</font></p>
+</div>
+
+这一行称为 *注释*。注释是为程序员，也就是你，而不是计算机，而存在的。计算机会直接忽略它们。注释用来提醒你这个程序做的是什么，或者告诉阅读程序的其他人这段程序做的是什么。在#号（称为井号）后的所有文字都是注释。（为了阅读代码方便，书中用浅灰色文字来表示注释。）     
+程序员通常会在程序的顶部写一段注释作为程序的标题。IDLE会用好色强调显示注释。    
+###函数
+*函数*有点像程序中的迷你程序。在函数中有若干行由上至下运行的代码。Python提供了一些内建的函数给我们直接使用（前面已经使用了print()函数）。函数的一个好处是我们只需要知道这个函数的功能是什么，而不需要了解它是如何做到的。（比如说你只需要知道print()函数可以将文字显示在屏幕上，却不需要知道它是如何做到的。）     
+
+*函数调用*则是用来告诉程序去运行某一个函数中代码的代码。比如说只要想在屏幕中显示一个字符串，就可以在程序中调用print()函数。print()函数接受括号中的值作为输入然后在屏幕上显示出来。如果我们想要在屏幕上显示 Hello world!，需要做的就是输入print的函数名，接着一个左括号，然后是字符串'Hello world!'，最后接上一个右括号。    
+
+###print()函数
+<div style='border:double #404040 1.5pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p align=right>hello.py</p>
+<p class=SourceCodeFeaturedCxSpFirst><span class=SourceLineNumber>2.</span> <font color = "000000">print('Hello world!')</font></p>
+<p class=SourceCodeFeaturedCxSpLast><span class=SourceLineNumber>3.</span> <font color = "000000">print('What is your name?')</font></p>
+</div>
+
+第二行是对print()函数的调用（将要显示的字符串写在括号里）。在函数名的后面需要加上括号，这样是为了明确指示这是一个名为print()的函数，而不是变量print。函数后的括号表明这是一个函数，就像'42'的单引号表明这个是字符串'42'而不是整数42。     
+第三行是对print()函数的另外一个调用。程序显示"What is your name?"     
+
+###input()函数
+<div style='border:double #404040 1.5pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p align=right>hello.py</p>
+<p class=SourceCodeFeatured><span class=SourceLineNumber>4.</span> <font color = "000000">myName = input()</font></p>
+</div>
+
+第四行中有一个带有变量（myName）的赋值语句，还有一个函数调用（input()）。当input()被调用时，程序会等待用户输入一些文字然后按下<kbd>Enter</kbd>。用户输入的文字（也就是他的名字）会以字符串的形式保存在myName中。     
+
+和表达式类似，函数调用也会计算得到一个值。这个由函数调用计算得出的值称为 *返回值*。（事实上对于函数而言我们用“返回”这个词来表达和“计算”同样的意思。）在这种情况下，input()函数的返回值就是用混输入的字符串：他的名字。如果用户输入Albert，那么input()函数会计算（就是返回）字符串'Albert'。    
+
+名为input()的函数不需要任何参数（这点和print()函数不一样），所以在调用的时候它的括号中间什么也没有。     
+
+<div style='border:double #404040 1.5pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p align=right>hello.py</p>
+<p class=SourceCodeFeatured><span class=SourceLineNumber>5.</span> <font color = "000000">print('It is good to meet you, ' + myName)</font></p>
+</div>
+
+第五行中对print()的调用中，我们使用来加号操作符(+)来连接字符串'It is good to meet you, '还有myName中存储的字符串，也就是用户在程序运行时输入的名字。通过这样的做法我们实现了让程序用名字来向用户问好。    
+
+###结束程序
+程序执行了最后一行之后，就停止执行了。这个时候它*终止*或者说*退出*了。同时计算机会忘记程序中所有的变量，包括在myName中存储的字符串。如果再一次运行同样的程序并输入另外一个不同的名字，它将会显示新的名字。    
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>Hello world!</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>What is your name?</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>Alan</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>It is good to meet you, Alan</p>
+</div>
+
+记住，计算机只会按照程序指示的去做。上面的程序中要求询问你的名字，让你输入一个字符串，然后就显示 hello 以及输入的字符串。     
+计算机是很笨的。程序可不管你输入的是你的名字还是别人的名字，还是其他乱七八糟的东西。你可以输入任何东西，计算机都会把输入做同样的处理：    
+
+<div style='border:solid #404040 1.0pt;padding:6.0pt 4.0pt 6.0pt 4.0pt'>
+<p class=SourceCodeExcerptCxSpFirst style='border:none;padding:0in'>Hello world!</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>What is your name?</p>
+<p class=SourceCodeExcerptCxSpMiddle style='border:none;padding:0in'>poop</p>
+<p class=SourceCodeExcerptCxSpLast style='border:none;padding:0in'>It is good to meet you, poop</p>
+</div>
+【译者：poop就是大便的意思…………】    
+
+###第四章练习C    
+参见<a>http://invpy.com/hackingpractise4C</a>    
+
+###小结    
+写程序其实就是如何用计算机的语言与其对话。上一章中我们学习了一丁点这种语言，本章又把一些Python指令合起来成为一个完整的程序，用来询问用户的名字并向他们问好。    
+
+在后面本书中所有的程序会更加复杂一些，但是不用担心。我们会一行一行的解释所有的程序。同时你也可以在命令行中输入某一行指令来观察它们在完整的程序中单独完成的是什么功能。    
+
+现在，我们开始编写第一个密码程序：反向密码。 【译者：YEAH~】    
+
+<div style="page-break-after: always;"></div>
+
+
